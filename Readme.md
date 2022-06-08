@@ -4,9 +4,9 @@
 
 # ToDo Emanuel: 
 
-1. [ ] creating Maven project
-2. [ ] creating pom.xml
+1. [x] creating Maven project
+2. [x] creating pom.xml
 
 # ToDo Vinzent:
 
-1. [ ] creating Readme.md
+1. [x] creating Readme.md
