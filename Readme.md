@@ -2,11 +2,11 @@
 ### by Emauel Neziraj and Vinzent Schmid
 
 
-#ToDo Emanuel: 
+# ToDo Emanuel: 
 
 1. [ ] creating Maven project
 2. [ ] creating pom.xml
 
-#ToDo Vinzent:
+# ToDo Vinzent:
 
 1. [ ] creating Readme.md
