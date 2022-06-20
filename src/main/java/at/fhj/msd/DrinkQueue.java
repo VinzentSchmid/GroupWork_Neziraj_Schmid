@@ -1,14 +1,37 @@
 package at.fhj.msd;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DrinkQueue implements IQueue{
-    @Override
-    public boolean offer(Object obj) {
-        return false;
+    private List<Drink> drinks = new ArrayList<Drink>();
+    private int maxSize;
+
+    public DrinkQueue(int maxSize) {
+        this.maxSize = maxSize;
     }
 
     @Override
-    public Object poll() {
-        return null;
+    public boolean offer(Object obj) {
+        if (drinks.size() != maxSize)
+            drinks.add((Drink) obj);
+        else
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public Drink poll() {
+        Drink element = peek();
+
+        if (drinks.size() != 0) {//Fehler 2
+            drinks.remove(0);
+        }else {
+            element = null;
+        }
+
+        return element;
     }
 
     @Override
