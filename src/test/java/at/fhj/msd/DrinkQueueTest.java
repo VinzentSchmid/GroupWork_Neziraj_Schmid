@@ -33,7 +33,6 @@ public class DrinkQueueTest {
 
     /**
      * Test Setup creates assigns the created variables to new objects
-     * @author Emanuel Neziraj
      */
     @BeforeEach
     public void setup(){
@@ -47,7 +46,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method offer returns true when object is added to queue
-     * @author Emanuel Neziraj
      */
     @Test
     public void offerTest(){
@@ -56,7 +54,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method offer returns false when object is not added to queue
-     * @author Emanuel Neziraj
      */
     @Test
     public void offerTest2(){
@@ -67,7 +64,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method poll returns the right object when object is deleted from queue
-     * @author Emanuel Neziraj
      */
     @Test
     public void pollTest(){
@@ -77,7 +73,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method poll returns null when queue is empty
-     * @author Emanuel Neziraj
      */
     @Test
     public void pollTest2(){
@@ -86,7 +81,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method remove returns the right object when object is deleted from queue
-     * @author Emanuel Neziraj
      */
     @Test
     public void removeTest(){
@@ -96,7 +90,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method remove throws exception when queue is empty
-     * @author Emanuel Neziraj
      */
     @Test
     public void removeTest2(){
@@ -105,7 +98,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method peek returns the first object in queue
-     * @author Emanuel Neziraj
      */
     @Test
     public void peekTest(){
@@ -116,7 +108,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method peek returns null when queue is empty
-     * @author Emanuel Neziraj
      */
     @Test
     public void peekTest2(){
@@ -125,7 +116,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method element returns the first element in queue
-     * @author Emanuel Neziraj
      */
     @Test
     public void elementTest(){
@@ -136,7 +126,6 @@ public class DrinkQueueTest {
 
     /**
      * tests if method element throws exception if queue is empty
-     * @author Emanuel Neziraj
      */
     @Test
     public void elementTest2(){

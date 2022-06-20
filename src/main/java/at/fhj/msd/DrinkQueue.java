@@ -6,7 +6,8 @@ import java.util.NoSuchElementException;
 
 /**
  * Class for creating a queue of drinks
- * @author Emanuel Neziraj & Vinzent Schmid
+ * @author Emanuel Neziraj
+ * @author Vinzent Schmid
  */
 public class DrinkQueue implements IQueue{
     /**
@@ -21,7 +22,6 @@ public class DrinkQueue implements IQueue{
 
     /**
      * Constructor for class DrinkQueue
-     * @author Emanuel Neziraj
      * @param maxSize - for setting the maximal size of List
      */
     public DrinkQueue(int maxSize) {
@@ -30,7 +30,6 @@ public class DrinkQueue implements IQueue{
 
     /**
      * Method for adding Drink object to the queue
-     * @author Emanuel Neziraj
      * @param obj - for adding to the queue
      * @return true if Drink is added to queue
      */
@@ -46,7 +45,6 @@ public class DrinkQueue implements IQueue{
 
     /**
      * Method for deleting first object in queue
-     * @author Emanuel Neziraj
      * @return object if queue is not empty, else return null
      */
     @Override
@@ -63,7 +61,6 @@ public class DrinkQueue implements IQueue{
     }
 
     /**
-     * @author Vinzent Schmid
      * Removes first drink, but if there is no drink. It will throw a NoSuchElementException
      * @return drink which was removed
     */
@@ -76,7 +73,6 @@ public class DrinkQueue implements IQueue{
         return drinks;
     }
     /**
-     * @author Vinzent Schmid
      * Get first drink of list, but when list is null, it will return null
      * @return first drink of list
      */
@@ -91,7 +87,6 @@ public class DrinkQueue implements IQueue{
         return drink;
     }
     /**
-     * @author Vinzent Schmid
      * Get first element of drink list but when object is null it will throw NoSuchElementException
      * @return first drink of list
      */

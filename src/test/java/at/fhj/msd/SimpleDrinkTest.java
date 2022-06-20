@@ -21,7 +21,6 @@ public class SimpleDrinkTest {
 
     /**
      * Test Setup creates assigns the created variables to new objects
-     * @author Emanuel Neziraj
      */
     @BeforeEach
     public void setup(){
@@ -32,7 +31,6 @@ public class SimpleDrinkTest {
 
     /**
      * tests if method isAlcoholic returns true when drink contains alcohol
-     * @author Emanuel Neziraj
      */
     @Test
     public void isAlcoholicTest(){
@@ -41,7 +39,6 @@ public class SimpleDrinkTest {
 
     /**
      * tests if method isAlcoholic returns falls when drink does not contain alcohol
-     * @author Emanuel Neziraj
      */
     @Test
     public void isAlcoholicTest2(){
@@ -50,7 +47,6 @@ public class SimpleDrinkTest {
 
     /**
      * tests if method getVolume returns the right volume of drink
-     * @author Emanuel Neziraj
      */
     @Test
     public void getVolumeTest(){
@@ -59,7 +55,6 @@ public class SimpleDrinkTest {
 
     /**
      * tests if method getVolume returns the right volume of drink
-     * @author Emanuel Neziraj
      */
     @Test
     public void getVolumeTest2(){
@@ -68,7 +63,6 @@ public class SimpleDrinkTest {
 
     /**
      * tests if method getAlcoholPercent returns the right alcohol percent of drink
-     * @author Emanuel Neziraj
      */
     @Test
     public void getAlcoholPercentTest(){
@@ -77,7 +71,6 @@ public class SimpleDrinkTest {
 
     /**
      * tests if method getAlcoholPercent returns the right alcohol percent of drink
-     * @author Emanuel Neziraj
      */
     @Test
     public void getAlcoholPercentTest2(){

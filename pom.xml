@@ -91,6 +91,10 @@
                 <configuration>
                     <show>private</show>
                     <nohelp>true</nohelp>
+                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                    <doclint>-html,-syntax,-accessibility,-missing</doclint>
+                    <failOnError>false</failOnError>
+                    <quiet>true</quiet>
                 </configuration>
             </plugin>
         </plugins>
