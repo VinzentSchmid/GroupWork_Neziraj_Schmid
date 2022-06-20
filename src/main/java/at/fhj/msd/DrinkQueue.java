@@ -1,5 +1,7 @@
 package at.fhj.msd;
 
+import java.util.NoSuchElementException;
+
 public class DrinkQueue implements IQueue{
     @Override
     public boolean offer(Object obj) {
@@ -12,17 +14,31 @@ public class DrinkQueue implements IQueue{
     }
 
     @Override
-    public Object remove() {
-        return null;
+    public Drink remove() {
+        Drink drinks = poll();
+        if (drinks == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return drinks;
     }
 
     @Override
-    public Object peek() {
-        return null;
+    public Drink peek() {
+        Drink element;
+        if (drinks.size() > 0)
+            element = drinks.get(0);
+        else
+            element = null;
+
+        return element;
     }
 
     @Override
-    public Object element() {
-        return null;
+    public Drink element() {
+        Drink element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
     }
 }
