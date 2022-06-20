@@ -3,7 +3,7 @@ package at.fhj.msd;
 /**
  * Main class for starting the application
  * @author Emanuel Neziraj
- * @authos Vinzent Schmid
+ * @author Vinzent Schmid
  */
 public class Application {
     /**
