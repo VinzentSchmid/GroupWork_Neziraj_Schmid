@@ -7,6 +7,8 @@
 1. [x] creating Maven project
 2. [x] creating pom.xml
 3. [x] find mistakes
+4. [x] implemented methods for DrinkQueue
+5. [x] added JavaDoc comments
 
 # ToDo Vinzent:
 
