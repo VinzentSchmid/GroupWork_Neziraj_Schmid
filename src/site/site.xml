@@ -1,0 +1,14 @@
+<project name="Groupwork Neziraj Schmid">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu name="Overview">
+            <item name="Introduction" href="index.html"/>
+            <item name="Neziraj" href="neziraj.html"/>
+            <item name="Schmid" href="schmid.html"/>
+        </menu>
+        <menu ref="reports"/>
+        <menu ref="parent"/>
+        <menu ref="modules"/>
+    </body>
+</project>
