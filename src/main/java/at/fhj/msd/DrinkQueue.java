@@ -1,8 +1,8 @@
 package at.fhj.msd;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * Class for creating a queue of drinks
@@ -61,10 +61,6 @@ public class DrinkQueue implements IQueue{
 
         return element;
     }
-=======
-import java.util.NoSuchElementException;
-
-public class DrinkQueue implements IQueue{
 
     /**
      * @author Vinzent Schmid
@@ -76,7 +72,6 @@ public class DrinkQueue implements IQueue{
         Drink drinks = poll();
         if (drinks == null)
             throw new NoSuchElementException("there's no element any more");
->>>>>>> e85e7920d3f90bc1586f33dc6ef84e3dc53968cf
 
         return drinks;
     }
