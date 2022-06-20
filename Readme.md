@@ -12,3 +12,5 @@
 
 1. [x] creating Readme.md
 2. [x] corrected errors
+3. [x] implemented methods for DrinkQueue
+4. [x] added JavaDoc comments

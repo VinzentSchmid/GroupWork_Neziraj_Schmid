@@ -3,16 +3,12 @@ package at.fhj.msd;
 import java.util.NoSuchElementException;
 
 public class DrinkQueue implements IQueue{
-    @Override
-    public boolean offer(Object obj) {
-        return false;
-    }
 
-    @Override
-    public Object poll() {
-        return null;
-    }
-
+    /**
+     * @author Vinzent Schmid
+     * Removes first drink, but if there is no drink. It will throw a NoSuchElementException
+     * @return drink which was removed
+    */
     @Override
     public Drink remove() {
         Drink drinks = poll();
@@ -21,18 +17,26 @@ public class DrinkQueue implements IQueue{
 
         return drinks;
     }
-
+    /**
+     * @author Vinzent Schmid
+     * Get first drink of list, but when list is null, it will return null
+     * @return first drink of list
+     */
     @Override
     public Drink peek() {
-        Drink element;
+        Drink drink;
         if (drinks.size() > 0)
-            element = drinks.get(0);
+            drink = drinks.get(0);
         else
-            element = null;
+            drink = null;
 
-        return element;
+        return drink;
     }
-
+    /**
+     * @author Vinzent Schmid
+     * Get first element of drink list but when object is null it will throw NoSuchElementException
+     * @return first drink of list
+     */
     @Override
     public Drink element() {
         Drink element = peek();
