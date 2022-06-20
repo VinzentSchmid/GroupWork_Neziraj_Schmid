@@ -1,5 +1,6 @@
 package at.fhj.msd;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,19 +61,51 @@ public class DrinkQueue implements IQueue{
 
         return element;
     }
+=======
+import java.util.NoSuchElementException;
 
+public class DrinkQueue implements IQueue{
+
+    /**
+     * @author Vinzent Schmid
+     * Removes first drink, but if there is no drink. It will throw a NoSuchElementException
+     * @return drink which was removed
+    */
     @Override
-    public Object remove() {
-        return null;
+    public Drink remove() {
+        Drink drinks = poll();
+        if (drinks == null)
+            throw new NoSuchElementException("there's no element any more");
+>>>>>>> e85e7920d3f90bc1586f33dc6ef84e3dc53968cf
+
+        return drinks;
     }
-
+    /**
+     * @author Vinzent Schmid
+     * Get first drink of list, but when list is null, it will return null
+     * @return first drink of list
+     */
     @Override
-    public Object peek() {
-        return null;
+    public Drink peek() {
+        Drink drink;
+        if (drinks.size() > 0)
+            drink = drinks.get(0);
+        else
+            drink = null;
+
+        return drink;
     }
-
+    /**
+     * @author Vinzent Schmid
+     * Get first element of drink list but when object is null it will throw NoSuchElementException
+     * @return first drink of list
+     */
     @Override
-    public Object element() {
-        return null;
+    public Drink element() {
+        Drink element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
     }
 }
