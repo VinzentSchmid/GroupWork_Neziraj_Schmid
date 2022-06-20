@@ -26,7 +26,9 @@ public class StringQueueTest {
      */
     @Test
     public void offerTest(){
+
         Assertions.assertTrue(queue.offer("offerTest"));
+
     }
     /**
      * Test if its possible to add two offerTest Strings.
