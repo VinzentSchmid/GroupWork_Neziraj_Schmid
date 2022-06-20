@@ -1,5 +1,5 @@
 # Exercise 7
-### by Emauel Neziraj and Vinzent Schmid
+### by Emanuel Neziraj and Vinzent Schmid
 
 
 # ToDo Emanuel: 
@@ -10,3 +10,4 @@
 # ToDo Vinzent:
 
 1. [x] creating Readme.md
+2. [x] corrected errors

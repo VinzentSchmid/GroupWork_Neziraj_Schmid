@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 public class StringQueue implements IQueue {
 
   private List<String> elements = new ArrayList<String>();
-  private int maxSize;
+  private int maxSize; //Fehler 1
 
   public StringQueue(int maxSize) {//Fehler 1
     this.maxSize = maxSize;
