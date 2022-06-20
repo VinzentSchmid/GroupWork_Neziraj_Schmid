@@ -1,29 +1,37 @@
 package at.fhj.msd;
 
-// fastly written (not really nice) comments but good enough to understand
+/**
+ * Interface for implementing a queue
+ */
 public interface IQueue {
-  /* 
-  add object to queue, return true if works, otherwise false
-  */
+  /**
+   * Method for adding object to the queue
+   * @param obj - for adding to the queue
+   * @return true if object is added to queue
+   */
   public abstract boolean offer(Object obj);
 
-  /* 
-  returns and deletes first element; null if no element in there
+  /**
+   * Method for deleting first object in queue
+   * @return element if queue is not empty, else return null
    */
   public abstract Object poll();
 
-  /* 
-  like poll but if no element exists NoSuchElementException is throwing instead of null return value
+  /**
+   * Removes first element, but if there is no element, a NoSuchElementException will be thrown
+   * @return element which was removed
    */
   public abstract Object remove();
 
-  /* 
-  gives first element but does not delete, null if nothing there
+  /**
+   * Get first element of list, but when list is null, null will be returned
+   * @return first element of list
    */
   public abstract Object peek();
 
-  /*
-  like peek but NoSuchElementException instead of null
+  /**
+   * Get first element of list, but when object is null, a NoSuchElementException will be thrown
+   * @return first drink of list
    */
   public abstract Object element();
 }
